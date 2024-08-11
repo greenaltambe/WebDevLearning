@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Cairo:wght@200..1000&family=Martian+Mono:wght@100..800&family=Playwrite+HU:wght@100..400&display=swap');
+
+body {
+    font-family: "Abel", sans-serif;
+    overflow: hidden;
+    background: #43C6AC;
+    background: -webkit-linear-gradient(to right, #F8FFAE, #43C6AC);
+    background: linear-gradient(to right, #F8FFAE, #43C6AC);
+}
+
+.container {
+    width: 95%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.digitalClock {
+    width: fit-content;
+    margin: auto;
+    padding: 10px;
+    border-radius: 20px;
+    color: #E8F3F1;
+    background-color: #2f485829;
+}
+
+.digitalClock h1 {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 5rem;
+}
+
+@media (max-width:768px) {
+    #bar1, #bar2 {
+        display: none;
+    }
+
+    .digitalClock {
+        text-align: center;
+        width: 100%;
+    }
+
+    .digitalClock h1 {
+        display: block;
+    }
+}
+
+@media (max-width:480px) {
+    .digitalClock h1 {
+        font-size: 4rem;
+    }
+}

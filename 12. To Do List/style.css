@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Cairo:wght@200..1000&family=Fredoka:wght@700&family=Inconsolata:wght@200..900&family=Martian+Mono:wght@100..800&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Pacifico&family=Playwrite+HU:wght@100..400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Fredoka", cursive;
+    background-image: linear-gradient(to right, #e22865, #37adcd);
+    color: white
+}
+
+.container {
+    width: 95%;
+    margin: auto;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 25px 0;
+}
+
+.nav h2 {
+    font-size: 2rem;
+}
+
+.user-input {
+    width: 350px;
+    text-align: center;
+}
+
+.user-input input {
+    width: 80%; /* So input box will take 80% of 350px width of user-input */
+    outline: none;
+    padding: 8px;
+    border: 1px solid lightgray;
+    border-radius: 5px 0 0 5px;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    transition: all 0.30s ease-in-out;
+}
+
+.user-input input:focus {
+    box-shadow: 0 0 5px #e22865;
+    border: 1px solid #e22865;
+}
+
+.user-input button {
+    cursor: pointer;
+    padding: 8px;
+    width: fit-content;
+    outline: none;
+    border: none;
+    transition: 0.5s;
+    background-color: whitesmoke;
+    border-radius: 0 5px 5px 0;
+}
+
+.user-input button:hover {
+    background-color: transparent;
+    color: white;
+}
+
+.to-do-items {
+    width: 500px;
+    margin: auto;
+}
+
+.item {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    border-radius: 2px;
+    padding: 16px;
+    margin-top: 10px;
+    color: #454545;
+    font-size: 1rem;
+    text-transform: uppercase;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    transition: all 0.30s ease-in-out;
+}
+.item div {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Align text and icons vertically in the center */
+    gap: 10px; /* Add space between the text and icons */
+}
+
+.item:hover {
+    box-shadow: 0 0 20px #e22865;
+    border: 1px solid #e22865;
+}
+
+.item i {
+    cursor: pointer;
+    margin-left: 10px; /* Add some space to the left of the icons */
+    color: #454545;
+}
+
+@media (max-width: 760px) {
+    .nav {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav h2 {
+        margin: 10px 0;
+    }
+
+    .user-input {
+        width: 100%;
+    }
+
+    .to-do-items {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .user-input input {
+        width: 74%;
+    }
+}
+
+@media (max-width: 320px) {
+    .user-input input {
+        width: 60%;
+    }
+}
